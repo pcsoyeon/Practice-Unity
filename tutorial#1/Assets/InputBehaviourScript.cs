@@ -25,12 +25,6 @@ public class InputBehaviourScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
             Debug.Log("아이템을 구입하였습니다.");
 
-        if (Input.GetKey(KeyCode.LeftArrow))
-            Debug.Log("왼쪽으로 이동 중 ");
-
-        if (Input.GetKeyUp(KeyCode.RightArrow))
-            Debug.Log("오른쪽 이동을 멈추었습니다.");
-
 
         // GetMouse: 마우스 버튼 입력을 받으면 true
         // 매개변수를 숫자로 받음 -> 0/1: 0이 왼쪽 버튼/1이 오른쪽 버튼
@@ -56,7 +50,7 @@ public class InputBehaviourScript : MonoBehaviour
         if (Input.GetButtonUp("Jump"))
             Debug.Log("슈퍼 점프!!");
 
-        // Input 의 size 늘려서 custom 버튼 입력 추가
+        // Input 의 size 늘려서 custom 버튼 입력 추
         if (Input.GetButtonDown("SuperFire"))
             Debug.Log("필살기!");
 
@@ -65,5 +59,24 @@ public class InputBehaviourScript : MonoBehaviour
 
         if (Input.GetButtonUp("SuperFire"))
             Debug.Log("필살기!!");
+
+        // 축 입력
+        if (Input.GetButton("Horizontal"))
+        {
+            Debug.Log("횡 이동 중...");
+
+            // GetAxis: 수평/수직 입력을 받으면 float 반환
+            Input.GetAxis("Horizontal"); // -> 가중치 값까지 출력 
+            Debug.Log(Input.GetAxisRaw("Horizontal")); // -> -1/1 값만 출력 (왼/오)
+        }
+
+        if(Input.GetButton("Vertical"))
+        {
+            Debug.Log("종 이동 중...");
+
+            // GetAxis: 수평/수직 입력을 받으면 float 반환
+            // Input.GetAxis("Vertical"); // -> 가중치 값까지 출력 
+            Debug.Log(Input.GetAxisRaw("Vertical")); // -> -1/1 값만 출력 (왼/오)
+        }
     }
 }
