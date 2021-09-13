@@ -49,4 +49,9 @@ public class MyBall : MonoBehaviour
         if (other.gameObject.name == "Cube")
             rigid.AddForce(Vector3.up * 10, ForceMode.Impulse);
     }
+
+    public void Jump()
+    {
+        rigid.AddForce(Vector3.up * 20, ForceMode.Impulse);
+    }
 }
