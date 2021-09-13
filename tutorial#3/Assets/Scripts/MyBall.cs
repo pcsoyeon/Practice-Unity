@@ -24,16 +24,29 @@ public class MyBall : MonoBehaviour
     void FixedUpdate()
     {
         // #2 힘을 가하기 
-        if (Input.GetButtonDown("Jump"))
-        {
-            rigid.AddForce(Vector3.up * 25, ForceMode.Impulse);
-        }
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    rigid.AddForce(Vector3.up * 25, ForceMode.Impulse);
+        //}
 
-        Vector3 vec = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        rigid.AddForce(vec, ForceMode.Impulse);
+        //Vector3 vec = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        //rigid.AddForce(vec, ForceMode.Impulse);
 
         // #3 회전력
         // 이동 방향을 축으로 해서 회전 (ex, .up으로 하면 z축을 기준으로 빙글빙글 돌게 됨)
-        rigid.AddTorque(Vector3.back);
+        //rigid.AddTorque(Vector3.back);
+
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        Vector3 vec = new Vector3(h, 0, v);
+
+        rigid.AddForce(vec, ForceMode.Impulse);
+    }
+
+    // cube 안에 머물러 있을 때
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == "Cube")
+            rigid.AddForce(Vector3.up * 10, ForceMode.Impulse);
     }
 }
