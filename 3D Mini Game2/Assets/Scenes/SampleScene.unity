@@ -240,7 +240,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.7264151, g: 0.7144642, b: 0.68187076, a: 1}
+  m_Color: {r: 0.6226415, g: 0.5994126, b: 0.53746885, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -562,7 +562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &833469070
 RectTransform:
   m_ObjectHideFlags: 0
@@ -805,11 +805,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1667961389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f35123243a9e04ee1ae74d363cb2bbf9, type: 3}
+  m_Script: {fileID: 11500000, guid: fc345b53484f1403aa983ff69c5c870e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   correctSnd: {fileID: 8300000, guid: 6522a2251ff614ad89eca3168fd24437, type: 3}
   wrongSnd: {fileID: 8300000, guid: afeaff13762fa4a41affc8e37da285dd, type: 3}
+  scoreText: {fileID: 1890135243}
+  chanceText: {fileID: 245493448}
+  gameOver: {fileID: 833469069}
 --- !u!1 &1686302622
 GameObject:
   m_ObjectHideFlags: 0
