@@ -292,6 +292,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737c65e5963534d3d8ce9a8eb83bab74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  num: 3
+  real: 1.6
+  fact: 1
+  msg: You can do it!!
 --- !u!4 &652375375
 Transform:
   m_ObjectHideFlags: 0
