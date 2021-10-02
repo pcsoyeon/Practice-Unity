@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCtrl6 : MonoBehaviour
 {
-    public float moveSpeed = 10.0f;
+    public float moveSpeed = 10f;
     public float rotSpeed = 100;
     public float force = 300;
 
@@ -36,7 +36,7 @@ public class PlayerCtrl6 : MonoBehaviour
         Vector3 moveDir = (AXIS_X * h + AXIS_Z * v).normalized;
 
         // move, rotate, jump 를 한번에 하므로 Space.World 매개변수 추가 -> 무조건 월드 좌표계로 
-        tr.Translate(moveDir * moveSpeed * Time.deltaTime, Space.Self);
+        tr.Translate(moveDir * moveSpeed * Time.deltaTime, Space.World);
     }
 
     void Rotate()
