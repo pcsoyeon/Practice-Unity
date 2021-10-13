@@ -57,6 +57,13 @@ public class PlayerCtrl6 : MonoBehaviour
             rb.AddForce(0, force, 0);
         }
     }
+
+    void OnDisable()
+    {
+        rb.velocity = Vector3.zero; // 속도 초기화 -> 위로 제대로 폭발하기 위해 
+        rb.AddForce(0, 3000, 0); // 위로 솟구치는 힘을 가함
+        GetComponent<Renderer>().material.color = Color.black;
+    }
 }
 
 

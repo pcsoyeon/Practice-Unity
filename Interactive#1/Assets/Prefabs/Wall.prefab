@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4161010444900125250}
   - component: {fileID: 1123020323394065010}
   - component: {fileID: 6741713029320560560}
+  - component: {fileID: 2287307327233035310}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -102,6 +103,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd7ab71a3e2ee4057bf7e1be7ab4df9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sparkEffect: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1,
+    type: 3}
+--- !u!114 &2287307327233035310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763163247597079138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc21925b63ddc4626868cf8d842cfe98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sparkEffect: {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1,

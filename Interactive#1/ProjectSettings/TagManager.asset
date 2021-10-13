@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - BULLET
+  - BULLET2
   layers:
   - Default
   - TransparentFX
@@ -15,9 +16,9 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
+  - ENEMY
+  - BULLET2
+  - BULLET
   - 
   - 
   - 
