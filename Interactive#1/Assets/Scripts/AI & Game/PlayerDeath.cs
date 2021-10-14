@@ -24,12 +24,12 @@ public class PlayerDeath : MonoBehaviour
             {
                 GetComponent<PlayerCtrl6>().enabled = false;
                 GetComponentInChildren<FireCtrl3>().enabled = false;
-                ExpPlayer(collision);
+                ExpPlayer();
             }
         }
     }
 
-    void ExpPlayer(Collision collision)
+    void ExpPlayer()
     {
         GameObject effect = Instantiate(expEffect);
         effect.transform.position = transform.position;
