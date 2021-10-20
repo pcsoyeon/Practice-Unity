@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyHealthMng : MonoBehaviour
 {
-    public int endScore = 0;
+    public int endScore = 1;
 
     int count = 3;
     Text countText;
@@ -21,8 +21,8 @@ public class EnemyHealthMng : MonoBehaviour
         count -= sub;
         countText.text = "Enemy HP: " + count;
 
-        if (count <= endScore) {
-            count = 3;
+        if (count <= 0) {
+            count = 4;
         }
     }
 }

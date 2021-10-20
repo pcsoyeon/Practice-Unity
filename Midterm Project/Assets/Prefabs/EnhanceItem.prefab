@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 2563974292555649274}
   - component: {fileID: 2563974292555649275}
   - component: {fileID: 2563974292555649276}
-  - component: {fileID: 2563974292555649277}
+  - component: {fileID: 6688406670565549886}
   m_Layer: 0
   m_Name: EnhanceItem
-  m_TagString: Untagged
+  m_TagString: ENHANCE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2563974292555649277
+--- !u!114 &6688406670565549886
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,7 +101,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2563974292555649278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58c90a8833e044dbaae6d2cf92861f27, type: 3}
+  m_Script: {fileID: 11500000, guid: 7dd872340c6054317a4983d62fcdffda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rotSpeed: 100
+  phm: {fileID: 0}

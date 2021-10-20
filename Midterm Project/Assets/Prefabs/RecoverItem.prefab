@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6021686223044544439}
   m_Layer: 0
   m_Name: RecoverItem
-  m_TagString: Untagged
+  m_TagString: RECOVER
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

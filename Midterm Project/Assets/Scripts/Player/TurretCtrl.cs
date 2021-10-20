@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurretCtrl : MonoBehaviour
 {
-    public float rotSpeed = 100;
+    public float rotSpeed = 10;
 
     Vector3 AXIS_Y = new Vector3(0, 1, 0);
 
@@ -19,6 +19,6 @@ public class TurretCtrl : MonoBehaviour
     {
         float mx = Input.GetAxis("Mouse X");
         Vector3 rotY = AXIS_Y * mx * rotSpeed * Time.deltaTime;
-        tr.Rotate(rotY, Space.World);
+        tr.Rotate(rotY, Space.Self);
     }
 }

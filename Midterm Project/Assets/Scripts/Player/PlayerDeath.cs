@@ -7,6 +7,8 @@ public class PlayerDeath : MonoBehaviour
     public int deathNum = 10;
     public PlayerHealthMng hm;
 
+    int hinCount = 0;
+
     void Start()
     {
 
@@ -14,14 +16,15 @@ public class PlayerDeath : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.CompareTag("ENEMY"))
-        {
-            hm.SubtractHealth(1);
-        }
-
         if (collision.collider.CompareTag("BULLET2"))
         {
             hm.SubtractHealth(1);
+
+            if (++hinCount == deathNum)
+            {
+                GetComponent<PlayerCtrl>().enabled = false;
+            }
         }
+
     }
 }

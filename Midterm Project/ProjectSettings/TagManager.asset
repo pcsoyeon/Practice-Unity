@@ -7,6 +7,11 @@ TagManager:
   - BULLET
   - BULLET2
   - ENEMY
+  - ENHANCE
+  - RECOVER
+  - TANK
+  - WALL
+  - ENEMY2
   layers:
   - Default
   - TransparentFX
@@ -20,9 +25,9 @@ TagManager:
   - ENEMY
   - BULLET2
   - BULLET
-  - 
-  - 
-  - 
+  - ENEMY2
+  - ENHANCE
+  - RECOVER
   - 
   - 
   - 

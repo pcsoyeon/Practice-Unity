@@ -35,4 +35,9 @@ public class FireCtrl : MonoBehaviour
 
         ads.PlayOneShot(fireAC); 
     }
+
+    void OnDisable()
+    {
+
+    }
 }

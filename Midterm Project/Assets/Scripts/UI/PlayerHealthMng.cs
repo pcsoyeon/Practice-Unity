@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealthMng : MonoBehaviour
 {
     public GameObject gameOver;
+
     public int endScore = 0;
     int count = 10;
     Text countText;
@@ -25,5 +26,11 @@ public class PlayerHealthMng : MonoBehaviour
         {
             gameOver.SetActive(true);
         }
+    }
+
+    public void AddHealth(int add)
+    {
+        count += add;
+        countText.text = "Player HP: " + count;
     }
 }

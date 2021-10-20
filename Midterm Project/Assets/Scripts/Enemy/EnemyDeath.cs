@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyDeath : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class EnemyDeath : MonoBehaviour
 
             if (++hitCount == deathNum)
             {
+                GetComponent<EnemyCtrl>().enabled = false;
                 ekm.AddScore(1);
             }
         }
