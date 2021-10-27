@@ -44,7 +44,7 @@ public class EnemyCtrl2 : MonoBehaviour
         if (traceTime > traceInterval)
         {
             nextIndex = Random.Range(0, wayPoints.Length);
-            Trace(wayPoints[nextIndex].position);
+            Move(wayPoints[nextIndex].position);
             traceTime = 0;
         } 
 
@@ -62,7 +62,7 @@ public class EnemyCtrl2 : MonoBehaviour
         Destroy(obj, 5);
     }
 
-    void Trace(Vector3 pos)
+    void Move(Vector3 pos)
     {
         if (agent.isPathStale == false)
         {
@@ -71,33 +71,25 @@ public class EnemyCtrl2 : MonoBehaviour
         }
     }
 
-    void Patrol(Vector3 nextPos)
-    {
-        if (agent.isPathStale == false)
-        {
-            agent.destination = nextPos;
-            agent.isStopped = false;
-        }
-    }
 
     void OnCollisionEnter(Collision coll)
     {
         if (coll.collider.CompareTag("ENHANCE"))
         {
             nextIndex = Random.Range(0, wayPoints.Length);
-            Patrol(wayPoints[nextIndex].position);
+            Move(wayPoints[nextIndex].position);
         }
 
         if (coll.collider.CompareTag("RECOVER"))
         {
             nextIndex = Random.Range(0, wayPoints.Length);
-            Patrol(wayPoints[nextIndex].position);
+            Move(wayPoints[nextIndex].position);
         }
 
         if (coll.collider.CompareTag("ENEMY") || coll.collider.CompareTag("TANK"))
         {
             nextIndex = Random.Range(0, wayPoints.Length);
-            Patrol(wayPoints[nextIndex].position);
+            Move(wayPoints[nextIndex].position);
         }
     }
 

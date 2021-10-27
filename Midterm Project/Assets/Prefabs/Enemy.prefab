@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathNum: 3
-  ehm: {fileID: 0}
-  ekm: {fileID: 0}
+  ehm: {fileID: 5556102336117449414, guid: 27178d2b6312c4ba3a15de91ec93c900, type: 3}
+  ekm: {fileID: 423120273187179586, guid: edfeee82e93c2459fbbffd5440366429, type: 3}
 --- !u!114 &439460995960441409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,16 +162,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb87b33ebbc64b0c87571557180501f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTr: {fileID: 0}
+  playerTr: {fileID: 2719659644795627516, guid: 5b07bad133b1a41409a1cff3d5bb8f01,
+    type: 3}
   wayPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1833906651258053904, guid: 713547f6cb6274b0fa4ed64586805794, type: 3}
+  - {fileID: 7489336905458025756, guid: 2eec59afd7b40445f951a5f39958fff5, type: 3}
+  - {fileID: 2237391754727045237, guid: faff95e3cd0f642cc88c7e3f4d67d85c, type: 3}
+  - {fileID: 2013833455507439122, guid: d3bdbbea7e3d7406b855f21e6e9136d3, type: 3}
   bullet: {fileID: 4337197107199485766, guid: c6bb3653649924f74b2906b6f2ee4dda, type: 3}
   shotInterval: 1
-  traceInterval: 1
-  patrolInterval: 2
+  deltaTime: 0
 --- !u!114 &439460995960441469
 MonoBehaviour:
   m_ObjectHideFlags: 0
